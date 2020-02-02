@@ -1,120 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="description" name="description" />
+    <meta name="google" content="notranslate" />
+    <script src="https://kit.fontawesome.com/5a82bc390e.js"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <script src="https://kit.fontawesome.com/5a82bc390e.js"></script>
+    <meta name="msapplication-tap-highlight" content="no" />
 
-  <meta name="msapplication-tap-highlight" content="no">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-icon-180x180.png"
+    />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-  <link href="./assets/favicon.ico" rel="icon">
+    <title>Darion Suggs</title>
 
-  <title>Darion Suggs</title>
+    <link href="./main.3f6952e4.css" rel="stylesheet" />
+  </head>
 
-<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+  <body class="">
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+    <!-- Add your content of header -->
+    <header>
+      <nav class="navbar  navbar-fixed-top navbar-default">
+        <div class="container">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-<body class="">
-<div id="site-border-left"></div>
-<div id="site-border-right"></div>
-<div id="site-border-top"></div>
-<div id="site-border-bottom"></div>
- <!-- Add your content of header -->
-<header>
-  <nav class="navbar  navbar-fixed-top navbar-default">
-    <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./index.html" title="">01 : Home</a></li>
-          <li><a href="./works.html" title="">02 : Works</a></li>
-          <li><a href="./contact.html" title="">03 : Contact</a></li>
-        </ul>
-
-
-      </div>
-    </div>
-  </nav>
-</header>
-
-<div class="section-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="section-container-spacer text-center">
-            <h1 class="h2">03 : Contact me</h1>
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav ">
+              <li><a href="./index.html" title="">01 : Home</a></li>
+              <li><a href="./works.html" title="">02 : Works</a></li>
+              <li><a href="./contact.html" title="">03 : Contact</a></li>
+            </ul>
           </div>
+        </div>
+      </nav>
+    </header>
 
-          <div class="row">
-            <div class="col-md-1">
-              <form action="https://formspree.io/dariontsuggs@icloud.com" method="POST" />
-                   <div class="fields">
-                     <div class="field half">
-                       <label for="name">Name</label>
-                       <input type="text" name="name" id="name" />
-                     </div>
-                     <div class="field half">
-                       <label for="email">Email</label>
-                       <input type="text" name="email" id="email" />
-                     </div>
-                     <div class="field">
-                       <label for="message">Message</label>
-                       <textarea name="message" id="message" rows="5"></textarea>
-                     </div>
-                   </div>
-                   <ul class="actions">
-                     <li><a href="" class="button submit">Send Message</a></li>
-                   </ul>
-                 </form>
+    <div class="section-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-container-spacer text-center">
+              <h1 class="h2">03 : Contact me</h1>
             </div>
 
+            <div class="row" style="margin-left: 400px;">
+              <div class="col-lg-5">
+                <form
+                  id="fs-frm"
+                  name="simple-contact-form"
+                  accept-charset="utf-8"
+                  action="dariontsuggs@icloud.com"
+                  method="post"
+                >
+                  <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="full-name"
+                      placeholder="First and Last"
+                      required=""
+                    />
+                    <label for="email-address">Email Address</label>
+                    <input
+                      type="email"
+                      name="_replyto"
+                      id="email-address"
+                      placeholder="Email"
+                      required=""
+                    />
+                    <label for="message">Message</label>
+                    <textarea
+                      rows="5"
+                      name="message"
+                      id="message"
+                      placeholder="Contact Me"
+                      required=""
+                    ></textarea>
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      id="email-subject"
+                      value="Contact Form Submission"
+                    />
+                  </fieldset>
+                  <input type="submit" value="Submit" />
+                </form>
+                <style>
+                  /* reset */
+                  #fs-frm input,
+                  #fs-frm select,
+                  #fs-frm textarea,
+                  #fs-frm fieldset,
+                  #fs-frm optgroup,
+                  #fs-frm label,
+                  #fs-frm #card-element:disabled {
+                    font-family: inherit;
+                    font-size: 100%;
+                    color: inherit;
+                    border: none;
+                    border-radius: 0;
+                    display: block;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                  }
+                  #fs-frm label,
+                  #fs-frm legend,
+                  #fs-frm ::placeholder {
+                    font-size: 0.825em;
+                    margin-bottom: 0.5em;
+                    padding-top: 0.2em;
+                    display: flex;
+                    align-items: baseline;
+                  }
+
+                  /* border, padding, margin, width */
+                  #fs-frm input,
+                  #fs-frm select,
+                  #fs-frm textarea,
+                  #fs-frm #card-element {
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    background-color: rgba(255, 255, 255, 0.9);
+                    padding: 0.75em 1em;
+                    margin-bottom: 1.5em;
+                  }
+                  #fs-frm input:focus,
+                  #fs-frm select:focus,
+                  #fs-frm textarea:focus {
+                    background-color: white;
+                    outline-style: solid;
+                    outline-width: thin;
+                    outline-color: gray;
+                    outline-offset: -1px;
+                  }
+                  #fs-frm [type="text"],
+                  #fs-frm [type="email"] {
+                    width: 100%;
+                  }
+                  #fs-frm [type="button"],
+                  #fs-frm [type="submit"],
+                  #fs-frm [type="reset"] {
+                    width: auto;
+                    cursor: pointer;
+                    -webkit-appearance: button;
+                    -moz-appearance: button;
+                    appearance: button;
+                  }
+                  #fs-frm [type="button"]:focus,
+                  #fs-frm [type="submit"]:focus,
+                  #fs-frm [type="reset"]:focus {
+                    outline: none;
+                  }
+                  #fs-frm [type="submit"],
+                  #fs-frm [type="reset"] {
+                    margin-bottom: 0;
+                  }
+                  #fs-frm select {
+                    text-transform: none;
+                  }
+
+                  #fs-frm [type="checkbox"] {
+                    -webkit-appearance: checkbox;
+                    -moz-appearance: checkbox;
+                    appearance: checkbox;
+                    display: inline-block;
+                    width: auto;
+                    margin: 0 0.5em 0 0 !important;
+                  }
+
+                  #fs-frm [type="radio"] {
+                    -webkit-appearance: radio;
+                    -moz-appearance: radio;
+                    appearance: radio;
+                  }
+
+                  /* address, locale */
+                  #fs-frm fieldset.locale input[name="city"],
+                  #fs-frm fieldset.locale select[name="state"],
+                  #fs-frm fieldset.locale input[name="postal-code"] {
+                    display: inline;
+                  }
+                  #fs-frm fieldset.locale input[name="city"] {
+                    width: 52%;
+                  }
+                  #fs-frm fieldset.locale select[name="state"],
+                  #fs-frm fieldset.locale input[name="postal-code"] {
+                    width: 20%;
+                  }
+                  #fs-frm fieldset.locale input[name="city"],
+                  #fs-frm fieldset.locale select[name="state"] {
+                    margin-right: 3%;
+                  }
+                </style>
+              </div>
+            </div>
           </div>
-
-       </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <section>
-									<ul class="contact">
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://github.com/brok3nDev" class="fab fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.linkedin.com/in/darion-suggs-5b3562155/" class="icon brands fab fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
+    <section>
+      <ul class="contact">
+        <li>
+          <h3>Social</h3>
+          <ul class="icons">
+            <li>
+              <a href="https://github.com/brok3nDev" class="fab fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/darion-suggs-5b3562155/"
+                class="fab fa-linkedin-in"
+                ><span class="label">LinkedIn</span></a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
 
-
-<footer class="footer-container text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>Darion Suggs</p>
+    <footer class="footer-container text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>Darion Suggs</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     navActivePage();
-  });
-</script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        navActivePage();
+      });
+    </script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
 
 <script>
   (function (i, s, o, g, r, a, m) {
@@ -127,6 +272,7 @@
   ga('send', 'pageview');
 </script>
 
---> <script type="text/javascript" src="./main.70a66962.js"></script></body>
-
+-->
+    <script type="text/javascript" src="./main.70a66962.js"></script>
+  </body>
 </html>
