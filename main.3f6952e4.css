@@ -5180,7 +5180,7 @@ button.close {
 }
 
 @media (max-width:767px) {
-    .visible-xs-inline-block {
+    .visible-lg-inline-block {
         display: inline-block!important
     }
 }
@@ -5208,13 +5208,13 @@ button.close {
 }
 
 @media (min-width:768px) and (max-width:991px) {
-    .visible-sm-inline {
+    .visible-lg-inline {
         display: inline!important
     }
 }
 
 @media (min-width:768px) and (max-width:991px) {
-    .visible-sm-inline-block {
+    .visible-lg-inline-block {
         display: inline-block!important
     }
 }
